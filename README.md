@@ -1,2 +1,2 @@
 # Chaturbate-API
-A simple barebones php template to pull chaturbate's affiliate XML Feed
+A simple responsive php template to pull chaturbate's affiliate XML Feed.
