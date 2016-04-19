@@ -7,14 +7,14 @@
 		define ( 'SITENAME',		'Chaturbate Demo' );						// Your Site Name
 		define ( 'BASEHREF',		'http://your.website.com/' );				// The Url path o the index.php
 		define ( 'BASEPATH',		'/path/to/script' );						// The file directory path to index.php
-		define ( 'USER',			'blogbabes' );								// Your Chaturbate Username ( this is only useful if you embed a personal chatroom )
-		define ( 'AFFID',			'827SM' );									// Chaturbate Affiliate ID
-		define ( 'TRACK',			'HILLI' );									// Chaturbate Campaign for Tracking
-		define ( 'MODE',			'revshare' );								// ( revshare, signup, or tokens )
-		define ( 'ROOM',			'top' );									// Which featured chatroom to embed ( top, male, transexual, personal, NULL )
-		define ( 'CBWL',			'chaturbate.com' );							// If you are wanting to change the domain to match one of your hosted whitelabels,
+		define ( 'USER',		'blogbabes' );								// Your Chaturbate Username ( this is only useful if you embed a personal chatroom )
+		define ( 'AFFID',		'827SM' );									// Chaturbate Affiliate ID
+		define ( 'TRACK',		'HILLI' );									// Chaturbate Campaign for Tracking
+		define ( 'MODE',		'revshare' );								// ( revshare, signup, or tokens )
+		define ( 'ROOM',		'top' );									// Which featured chatroom to embed ( top, male, transexual, personal, NULL )
+		define ( 'CBWL',		'chaturbate.com' );							// If you are wanting to change the domain to match one of your hosted whitelabels,
 																				// enter the domain here. eg ( www.yourdomain.com ) the default is 'chaturbate.com'
-		define ( 'USECRON',			false );									// If you would like to update via cron set this to true.
+		define ( 'USECRON',		false );									// If you would like to update via cron set this to true.
 																				// Add includes/cron.php to your crontab 
 		define ( 'COLUMNS_DESKTOP',	'2u' );										// How many columns do you want to show.
 		define ( 'COLUMNS_LARGE',	'3u(large)' );								// How many columns do you want to show.
