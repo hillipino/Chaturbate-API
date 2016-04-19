@@ -1,0 +1,79 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		4px,
+		border-width:		1px,
+		navPanel-width:		20em,
+		element-height:		2.75em,
+		element-margin:		2em
+	);
+
+// Font.
+	$font: (
+		family:						('Slabo 27px', serif),
+		family-heading:				('Droid Serif', serif),
+		family-fixed:				('Courier New', monospace),
+		weight:						400,
+		weight-x-light:				200,
+		weight-light:				300,
+		weight-medium:				500,
+		weight-semi-bold:			600,
+		weight-bold:				700,
+		weight-x-bold:				800,
+		weight-u-bold:				900
+	);
+
+// Palette.
+	$palette: (
+		bg:					#000,
+		fg:					#c4c5c4,
+		fg-bold:			#f8f8f8,
+		fg-light:			#f8f8f8,
+		border:				rgba(144,144,144,0.25),
+		border-bg:			rgba(144,144,144,0.075),
+		border2:			rgba(144,144,144,0.5),
+		border2-bg:			rgba(144,144,144,0.2),
+		highlight:			accent1,
+
+		header: (
+			bg:				#121212
+		),
+
+		footer: (
+			bg:				#121212
+		),		
+
+		accent1: (
+			bg:				#e62455,
+			fg:				mix(#e62455, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#e62455, #ffffff, 40%),
+			border:			rgba(255,255,255,0.15),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2),
+			highlight:		accent1
+		),
+
+		accent2: (
+			bg:				#e62455,
+			fg:				mix(#e62455, #ffffff, 25%),
+			fg-bold:		#ffffff,
+			fg-light:		mix(#e62455, #ffffff, 40%),
+			border:			rgba(255,255,255,0.15),
+			border-bg:		rgba(255,255,255,0.075),
+			border2:		rgba(255,255,255,0.5),
+			border2-bg:		rgba(255,255,255,0.2),
+			highlight:		accent1
+		)
+	);

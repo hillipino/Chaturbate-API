@@ -1,0 +1,72 @@
+/*********************************************************************************/
+/* CB Thumbnail                                                                  */
+/*********************************************************************************/
+	
+	.cb_thumbs {
+		padding: 0;
+	}
+
+	.element {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}	
+
+		.cb_thumbnail {
+			position: relative;
+		}
+
+		.cb_status {
+			position: absolute;
+			background: rgba(0,0,0,0.75);
+			color: #FFF;
+			width: 100%;
+			padding: .25em .5em;
+			bottom: .5em;
+			right: 0;
+			text-align: center;
+
+			&.private {
+				background: rgba(255,0,0,0.75);
+			}	
+
+			&.public {
+				background: rgba(30,208,34,0.75);
+			}	
+
+		}
+
+		.cb_age {
+			font-size: 0.8em;
+		}
+		
+		.cb_time_online {
+			float: left;
+		}
+		
+		.cb_num_users {
+			float: right;
+		}		
+	
+
+	.video-wrapper {
+		text-align:center;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+
+		iframe { 
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	}
