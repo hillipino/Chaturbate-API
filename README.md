@@ -1,6 +1,9 @@
 # Chaturbate-API
 A simple responsive php template to pull chaturbate's affiliate XML Feed.
 
+#Styling
+You can style this template using SASS or CSS. The html display is found in 'includes/templates.php' and 'includes/functions.php'.
+
 #Setup and Configuration
 Open includes/settings.php and add your configuration details. Be sure to change your user and aff id if you want to get credit for your sales. If you do not have an affiliate account you can get one <a href="http://chaturbate.com/affiliates/in/3Mc9/827SM/?track=GH">here</a>. The following options are configurable:
 
