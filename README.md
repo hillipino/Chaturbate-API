@@ -7,6 +7,10 @@ You can style this template using SASS or CSS. The html display is found in 'inc
 #Setup and Configuration
 Open includes/settings.php and add your configuration details. Be sure to change your user and aff id if you want to get credit for your sales. If you do not have an affiliate account you can get one <a href="http://chaturbate.com/affiliates/in/3Mc9/827SM/?track=GH">here</a>. The following options are configurable:
 
+#HTACCESS
+
+Quick note, if you are running this in a subdirectory, you need to modify the htaccess files. Anywhere where it mentions /index.php change it to /subdirectory/index.php
+
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// General Configuration Settings
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
