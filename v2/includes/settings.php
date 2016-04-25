@@ -26,6 +26,7 @@
 		define ( 'RELATED_CNT', 	12 );										// The amount of related cams to show.
 		define ( 'PAGINATE',		true );										
 		define ( 'FLATFILE',		BASEPATH . '/includes/data/feed.xml');		// Name of file to store xml feed into
+		define ( 'GOOGLE',			'UA-10858757-11' );							// Google Analytics Tracking ID Leave Blank to disable
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Thumbnail Position Ads
