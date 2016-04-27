@@ -435,7 +435,9 @@
 									</div>
 									<div class="6u 12u(medium)">
 										<header>
-											<h2>' . $arg1 . '\'s Free live Webcam Show</h2>
+											<h2>';
+											random_title( $arg1, $cam->age );		
+											echo '</h2>
 											<p>' . $cam->room_subject . '</p>
 										</header>
 										';
