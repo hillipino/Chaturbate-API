@@ -2548,7 +2548,8 @@ body {
 /* Footer */
 #footer {
   padding: 4em 0 2em 0;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  text-align: center; }
   @media screen and (max-width: 736px) {
     #footer {
       padding: 3em 0 1em 0;

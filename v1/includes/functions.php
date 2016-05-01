@@ -417,9 +417,9 @@
 		
 			function solo_cams( $affid, $track, $user ) {
 
-				$arg1 = array_key_exists('arg1', $_GET) ? $_GET['arg1'] : null;
-				
-				$cams = new SimpleXMLElement(FLATFILE, null, true);
+				$arg1 		= array_key_exists('arg1', $_GET) ? $_GET['arg1'] : null;				
+				$cams 		= new SimpleXMLElement(FLATFILE, null, true);
+				$online 	= false;
 				
 				foreach( $cams as $cam ){ 
 				
@@ -443,6 +443,8 @@
 
 
 					if ( $cam->username == $user ) {
+
+						$online = true;
 					
 						echo '		
 							
@@ -502,10 +504,27 @@
 							
 						';					
 						
-					} 			
-	
+					} 
+
 				}
-				
+
+				if ( !$online ) { // Display this if user is offline
+
+					echo '
+						<div class="container">
+							<header>
+								<h2>' . $arg1 . ' is Currently Offline</h2>
+								<p>So we have picked out another Hot Live Stream for you to enjoy!</p>
+							</header>
+							<section class="cb_video video-wrapper">
+					';
+
+					featured( 'revshare', 'top' );
+
+					echo '</section></div></div>';
+
+				}	
+								
 				if ( RELATED_SHOW ) {
 				
 					echo '
@@ -529,61 +548,42 @@
 			
 				switch ( $mode ) {
 					
-					case signup: 	//signup mode
+					case 'signup': 	//signup mode
 					
 						switch ( $room ) {
 							
-							case personal:
-								$go = REG_YOURCAM;
+							case 'personal':
+								$go = 'Jrvi';
 								break;
-							case top:
-								$go = REG_HOME;
+							case 'top':
+								$go = 'NxHf';
 								break;								
-							case male:
-								$go = REG_HOME_MALE;
+							case 'male':
+								$go = 'SKWo';
 								break;								
-							case tranny:
-								$go = REG_HOME_TRANNY;
+							case 'tranny':
+								$go = 'JXvq';
 								break;	
 								
 						}
 						
-						break;
-						
-					case tokens: 		//tokens mode
-
-						switch ( $room ) {
-							
-							case personal:
-								$go = TOK_YOURCAM;
-								break;
-							case top:
-								$go = TOK_HOME;
-								break;								
-							case male:
-								$go = TOK_HOME;
-								break;								
-							case tranny:
-								$go = TOK_HOME;
-								break;	
-								
-						}							
+						break;							
 
 					default: 		// revshare mode
 
 						switch ( $room ) {
 							
-							case personal:
-								$go = REV_YOURCAM;
+							case 'personal':
+								$go = '9oGW';
 								break;
-							case top:
-								$go = REV_HOME;
+							case 'top':
+								$go = 'dTm0';
 								break;								
-							case male:
-								$go = REV_HOME_MALE;
+							case 'male':
+								$go = 'CoeM';
 								break;								
-							case tranny:
-								$go = REV_HOME_TRANNY;
+							case 'tranny':
+								$go = 'zoQq';
 								break;	
 								
 						}					
