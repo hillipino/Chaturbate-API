@@ -1,0 +1,21 @@
+Order Deny,Allow
+Allow from all
+
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 402 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /404
+ErrorDocument 500 /index.php
+ErrorDocument 501 /index.php
+ErrorDocument 502 /index.php
+ErrorDocument 503 /index.php
+
+Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*$							/index.php?cmd=$1 [NC,L]
+RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$				/index.php?cmd=$1&arg1=$2  [NC,L]
+RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$	/index.php?cmd=$1&arg1=$2&arg2=$3  [NC,L]
+RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$	/index.php?cmd=$1&arg1=$2&arg2=$3&arg3=$4  [NC,L]
