@@ -7,7 +7,7 @@
 		define ( 'BASEHREF',		'http://yourwebsite.com/' );				// The Url path o the index.php
 		define ( 'BASEPATH',		getcwd() );									// The file directory path to index.php
 		define ( 'FLATFILE',		BASEPATH . '/includes/data/feed.xml');		// Name of file to store xml feed into
-		define ( 'USECRON',			true );										// If you would like to update via cron set this to true.
+		define ( 'USECRON',		false );										// If you would like to update via cron set this to true.
 																				// Add includes/cron.php to your crontab 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Chaturbate Settings
