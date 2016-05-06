@@ -25,6 +25,15 @@
 	// Command Class
 		require('classes/arix.class.php');
 
+	// Compress with gzip
+
+		if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) {
+		    ob_start( "ob_gzhandler" );
+		}
+		else {
+		    ob_start();
+		}
+
 	// Get Pages
 
 		$arg1 = array_key_exists('arg1', $_GET) ? $_GET['arg1'] : null;
