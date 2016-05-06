@@ -19,3 +19,14 @@ RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*$							/index.php?cmd=$1 [NC,L]
 RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$				/index.php?cmd=$1&arg1=$2  [NC,L]
 RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$	/index.php?cmd=$1&arg1=$2&arg2=$3  [NC,L]
 RewriteRule ^([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*([a-zA-Z0-9\-\_]+)[/]*$	/index.php?cmd=$1&arg1=$2&arg2=$3&arg3=$4  [NC,L]
+
+# BEGIN EXPIRES
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/plain "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-icon "access plus 1 year"
+</IfModule>
+# END EXPIRES
