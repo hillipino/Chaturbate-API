@@ -59,7 +59,7 @@
 
 					$online = true;
 					$prev 	= $cams->resource[$index-1];
-        			$next 	= $cams->resource[$index+1];
+        				$next 	= $cams->resource[$index+1];
 					
 					echo '		
 						<div class="inner solo">
@@ -120,7 +120,8 @@
 							
 					';					
 						
-				}			
+				}
+				$index++;
 	
 			}
 
