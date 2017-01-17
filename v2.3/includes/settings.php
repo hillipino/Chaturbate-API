@@ -25,7 +25,7 @@
 	// General Settings
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		define ( 'SITENAME',		'Chaturbate API Demo V2.3' );						// Your Site Name
+		define ( 'SITENAME',		'Chaturbate API Demo V2.3' );				// Your Site Name
 		define ( 'GOOGLE',			'' );										// Google Analytics Tracking ID Leave Blank to disable
 		
 
@@ -262,28 +262,28 @@
 
 				case 'revshare':
 
-					define ( 'LINK_SIGNUP',		'http://' . CBWL . '/affiliates/in/' . REV_JOIN . '/' . AFFID . '/?track=' . TRACK );			// Signup Link
-					define ( 'LINK_YOURCAM',	'http://' . CBWL . '/affiliates/in/' . REV_YOURCAM . '/' . AFFID . '/?track=' . TRACK );		// Your Personal Cam Link
-					define ( 'LINK_AFF',		'http://' . CBWL . '/affiliates/in/' . REV_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
-					define ( 'LINK_BROADCAST',	'http://' . CBWL . '/affiliates/in/' . REV_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
+					define ( 'LINK_SIGNUP',		CBWL . '/affiliates/in/' . REV_JOIN . '/' . AFFID . '/?track=' . TRACK );			// Signup Link
+					define ( 'LINK_YOURCAM',	CBWL . '/affiliates/in/' . REV_YOURCAM . '/' . AFFID . '/?track=' . TRACK );		// Your Personal Cam Link
+					define ( 'LINK_AFF',		CBWL . '/affiliates/in/' . REV_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
+					define ( 'LINK_BROADCAST',	CBWL . '/affiliates/in/' . REV_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
 
 					break;
 
 				case 'signup':
 
-					define ( 'LINK_SIGNUP',		'http://' . CBWL . '/affiliates/in/' . REG_JOIN . '/' . AFFID . '/?track=' . TRACK );			// Signup Link
-					define ( 'LINK_YOURCAM',	'http://' . CBWL . '/affiliates/in/' . REG_YOURCAM . '/' . AFFID . '/?track=' . TRACK );		// Your Personal Cam Link
-					define ( 'LINK_AFF',		'http://' . CBWL . '/affiliates/in/' . REG_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
-					define ( 'LINK_BROADCAST',	'http://' . CBWL . '/affiliates/in/' . REG_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
+					define ( 'LINK_SIGNUP',		CBWL . '/affiliates/in/' . REG_JOIN . '/' . AFFID . '/?track=' . TRACK );			// Signup Link
+					define ( 'LINK_YOURCAM',	CBWL . '/affiliates/in/' . REG_YOURCAM . '/' . AFFID . '/?track=' . TRACK );		// Your Personal Cam Link
+					define ( 'LINK_AFF',		CBWL . '/affiliates/in/' . REG_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
+					define ( 'LINK_BROADCAST',	CBWL . '/affiliates/in/' . REG_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
 
 					break;
 
 				case 'tokens':
 
-					define ( 'LINK_SIGNUP',		'http://' . CBWL . '/affiliates/in/' . TOK_BEST_TOUR . '/' . AFFID . '/?track=' . TRACK );		// Signup Link
-					define ( 'LINK_YOURCAM',	'http://' . CBWL . '/affiliates/in/' . TOK_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Your Personal Cam Link
-					define ( 'LINK_AFF',		'http://' . CBWL . '/affiliates/in/' . REV_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
-					define ( 'LINK_BROADCAST',	'http://' . CBWL . '/affiliates/in/' . TOK_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
+					define ( 'LINK_SIGNUP',		CBWL . '/affiliates/in/' . TOK_BEST_TOUR . '/' . AFFID . '/?track=' . TRACK );		// Signup Link
+					define ( 'LINK_YOURCAM',	CBWL . '/affiliates/in/' . TOK_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Your Personal Cam Link
+					define ( 'LINK_AFF',		CBWL . '/affiliates/in/' . REV_AFF_PROG . '/' . AFFID . '/?track=' . TRACK );		// Your Affiliate URL
+					define ( 'LINK_BROADCAST', 	CBWL . '/affiliates/in/' . TOK_BROADCASTER . '/' . AFFID . '/?track=' . TRACK );	// Broadcast your cam
 
 					break;
 
