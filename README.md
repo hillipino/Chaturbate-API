@@ -1,67 +1,40 @@
-# Chaturbate-API
-A simple responsive php template to pull chaturbate's affiliate XML Feed.
+# Chaturbate API
 
-#Styling
-You can style this template using SASS or CSS. The html display is found in 'includes/templates.php' and 'includes/functions.php'.
+Chaturbate API is a simple, barebones php script that will fetch <a href="http://affiliates.hillipino.com/jPqoq">Chaturbate's affiliate XML feed</a> and display the cams on your website. The template is fully customizable and responsive.
 
-#Setup and Configuration
-Open includes/settings.php and add your configuration details. Be sure to change your user and aff id if you want to get credit for your sales. If you do not have an affiliate account you can get one below
+## Setup and Configuration
 
-<a href="http://affiliates.hillipino.com/jPqoq">Chaturbate affiliate program is here</a>. 
+To setup the script is fairly straightforward. The below steps are the minimum steps to get the script running. Feel free to change or customize as you see fit.
 
-<a href="http://affiliates.hillipino.com/2dFcz">Camgasm affiliate program is here</a>
+-1 Download the latest release here [ https://github.com/hillipino/Chaturbate-API/releases ]
+-2 Unzip the archive.
+-3 Go to includes/settings.php and enter your chaturbate and server settings. The script should work once you set the 'BASEHREF', but to get credit for your referrals you need to also change the chaturbate settings. If you do not have one, setup a <a href="http://affiliates.hillipino.com/jPqoq">Chaturbate affiliate account.</a>
+-4 Upload the files to your server.
+-5 On your server make sure includes/data/feed.xml is writable.
+-6 If you are running this script in a sub directory, you need to modify the htaccess file. Anywhere that you see /index.php , change it to /sub-directory/index.php
 
-Make sure includes/data/feed.xml is writable on your server
+## Script Speed
 
-#HTACCESS
+When you first use this script, you may realize that it takes forever to load. This is due to the fact that every time you load the page the xml feed has to be parsed.
 
-Quick note, if you are running this in a subdirectory, you need to modify the htaccess files. Anywhere where it mentions /index.php change it to /subdirectory/index.php
+I highly recommend seting the USECRON to true and either setup a cronjob on your server or use one of the free services below to execute cron.php every 5 minutes or so. This file basically just fetches the xml feed and writes to a local file on your server that can be cached, preventing your site from downloading the feed on every page load.
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// General Configuration Settings
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		define ( 'SITENAME',		'Chaturbate Demo' );						// Your Site Name
-		define ( 'BASEHREF',		'http://your.website.com/' );				// The Url path to the index.php
-		define ( 'BASEPATH',		'/path/to/script' );						// The file directory path to index.php
-		define ( 'USER',			'username' );								// Your Chaturbate Username ( this is only useful if you embed a personal chatroom )
-		define ( 'AFFID',			'827SM' );									// Chaturbate Affiliate ID
-		define ( 'TRACK',			'DEFAULT' );									// Chaturbate Campaign for Tracking
-		define ( 'MODE',			'revshare' );								// ( revshare, signup, or tokens )
-		define ( 'ROOM',			'top' );									// Which featured chatroom to embed ( top, male, transexual, personal, NULL )
-		define ( 'CBWL',			'chaturbate.com' );							// If you are wanting to change the domain to match one of your hosted whitelabels,
-																				// enter the domain here. eg ( www.yourdomain.com ) the default is 'chaturbate.com'
-		define ( 'USECRON',			false );									// If you would like to update via cron set this to true.
-																				// Add includes/cron.php to your crontab 
-		define ( 'COLUMNS_DESKTOP',	'2u' );										// How many columns do you want to show.
-		define ( 'COLUMNS_LARGE',	'3u(large)' );								// How many columns do you want to show.
-		define ( 'COLUMNS_TABLET',	'6u(medium)' );								// How many columns do you want to show.	
-		define ( 'COLUMNS_MOBILE',	'12u(small)' );								// How many columns do you want to show.													
-		define ( 'SHOW_STATUS', 	true );										// Shows or hides the room status public, private  ( true or false )	
-		define ( 'RELATED_SHOW',	true );										// Shows related cams on single cam page.
-		define ( 'RELATED_CNT', 	12 );										// The amount of related cams to show.
-		define ( 'PAGINATE',		true );										
-		define ( 'FLATFILE',		BASEPATH . '/includes/data/feed.xml');		// Name of file to store xml feed into
-		
-			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Thumbnail Position Ads
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-	
-		define ( 'AD_POS1',			NULL );										// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
-		define ( 'AD_POS2',			NULL );										// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
-		define ( 'AD_POS3',			NULL );										// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
-		define ( 'AD_POS4',			NULL );										// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
-		
-		define ( 'AD_CODE1',		NULL );										// ( Ad Code for position 1 )
-		define ( 'AD_CODE2',		NULL );										// ( Ad Code for position 2 )
-		define ( 'AD_CODE3',		NULL );										// ( Ad Code for position 3 )
-		define ( 'AD_CODE4',		NULL );										// ( Ad Code for position 4 )
-		
-		#Random Descriptions
-		In the settings file there is also a section that allows you to set random descriptions for the single cam display page. You can modify these descriptions or even add or remove them.
-		
-		If you add or remove descriptions be sure to change the following variable:
-		$num 	= Rand (1,6); // 6 would be the total amount of descriptions added.
-		
-		#Links
-		These shouldn't have to be modified but you can double check your affiliate links to make sure the codes matchup.
+### Free Cron Services
+
+- Cron-job.org ( https://cron-job.org )
+- SetCron ( https://www.setcron.com/ )
+- MyWebCron ( http://www.mywebcron.com/ )
+
+
+## License
+
+Chaturbate API is released under the MIT license.
+
+Copyright (c) hillipino.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
