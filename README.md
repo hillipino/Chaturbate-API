@@ -6,12 +6,12 @@ Chaturbate API is a simple, barebones php script that will fetch <a href="http:/
 
 To setup the script is fairly straightforward. The below steps are the minimum steps to get the script running. Feel free to change or customize as you see fit.
 
-1 Download the latest release here [ https://github.com/hillipino/Chaturbate-API/releases ]
-2 Unzip the archive.
-3 Go to includes/settings.php and enter your chaturbate and server settings. The script should work once you set the 'BASEHREF', but to get credit for your referrals you need to also change the chaturbate settings. If you do not have one, setup a <a href="http://affiliates.hillipino.com/jPqoq">Chaturbate affiliate account.</a>
-4 Upload the files to your server.
-5 On your server make sure includes/data/feed.xml is writable.
-6 If you are running this script in a sub directory, you need to modify the htaccess file. Anywhere that you see /index.php , change it to /sub-directory/index.php
+- Download the latest release here [ https://github.com/hillipino/Chaturbate-API/releases ]
+- Unzip the archive.
+- Go to includes/settings.php and enter your chaturbate and server settings. The script should work once you set the 'BASEHREF', but to get credit for your referrals you need to also change the chaturbate settings. If you do not have one, setup a <a href="http://affiliates.hillipino.com/jPqoq">Chaturbate affiliate account.</a>
+- Upload the files to your server.
+- On your server make sure includes/data/feed.xml is writable.
+- If you are running this script in a sub directory, you need to modify the htaccess file. Anywhere that you see /index.php , change it to /sub-directory/index.php
 
 ## Script Speed
 
