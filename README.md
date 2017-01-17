@@ -1,6 +1,6 @@
 # Chaturbate API
 
-Chaturbate API is a simple, barebones php script that will fetch [Chaturbate's affiliate XML feed](http://affiliates.hillipino.com/jPqoq) and display the cams on your website. The template is fully customizable and responsive.
+Chaturbate API is a simple, barebones php script that will fetch [Chaturbate's affiliate XML feed](http://affiliates.hillipino.com/jPqoq) or [Camgasm's XML feed](http://camgasm.com/affiliates/in/?track=default&tour=07kX&campaign=7iFy8)and display the cams on your website. The template is fully customizable and responsive.
 
 
 ## Setup and Configuration
@@ -9,7 +9,7 @@ To setup the script is fairly straightforward. The below steps are the minimum s
 
 1. Download the latest release here ( https://github.com/hillipino/Chaturbate-API/releases )
 2. Unzip the archive.
-3. Go to includes/settings.php and enter your chaturbate and server settings. The script should work once you set the 'BASEHREF', but to get credit for your referrals you need to also change the chaturbate settings. If you do not have one, setup a [Chaturbate's affiliate account](http://affiliates.hillipino.com/jPqoq).</a>
+3. Go to includes/settings.php and enter your chaturbate and server settings. The script should work once you set the 'BASEHREF', but to get credit for your referrals you need to also change the chaturbate settings. If you do not have one, setup a [Chaturbate affiliate account](http://affiliates.hillipino.com/jPqoq) or  [Camgasm affiliate account](http://camgasm.com/affiliates/in/?track=default&tour=07kX&campaign=7iFy8).</a>
 4. Upload the files to your server.
 5. On your server make sure includes/data/feed.xml is writable.
 6. If you are running this script in a sub directory, you need to modify the htaccess file. Anywhere that you see /index.php , change it to /sub-directory/index.php
@@ -43,9 +43,9 @@ Your server settings, you should only have to change BASEHREF. I would recommend
 	define ( 'USECRON',			false );											// If you would like to update via cron set this to true.
 ```
 
-### Chaturbate Settings
+### Chaturbate/Camgasm Settings
 
-Your [Chaturbate's affiliate account](http://affiliates.hillipino.com/jPqoq) settings. These are pretty much self explanatory except for the CBWL.
+Your [Chaturbate affiliate account](http://affiliates.hillipino.com/jPqoq) or  [Camgasm affiliate account](http://camgasm.com/affiliates/in/?track=default&tour=07kX&campaign=7iFy8) settings. These are pretty much self explanatory except for the CBWL.
 
 Due to some recent changes if you are using a whitelabel the iframes will error if you are linking with the https://. So be sure to use http:// in your whitelabel domain for the CBWL setting. If you aren't using a whitelabel, just leave it as is.
 
