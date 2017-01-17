@@ -36,12 +36,12 @@ An explanation of the settings.php file. It is heavily commented but I figured I
 
 Your server settings, you should only have to change BASEHREF. I would recommend changing USECRON to true and setting up a cronjob as noted above.
 
-	```php
+```php
 	define ( 'BASEHREF',		'http://192.168.0.10/adult/chaturbate/v2.3/' );		// The Url path o the index.php
 	define ( 'BASEPATH',		getcwd() );											// The file directory path to index.php
 	define ( 'FLATFILE',		BASEPATH . '/includes/data/feed.xml');				// Name of file to store xml feed into
 	define ( 'USECRON',			false );											// If you would like to update via cron set this to true.
-	```
+```
 
 ### Chaturbate Settings
 
@@ -50,7 +50,7 @@ Your [Chaturbate's affiliate account](http://affiliates.hillipino.com/jPqoq) set
 Due to some recent changes if you are using a whitelabel the iframes will error if you are linking with the https://. So be sure to use http:// in your whitelabel domain for the CBWL setting. If you aren't using a whitelabel, just leave it as is.
 
 
-	```php
+```php
 	define ( 'USER',			'blogbabes' );								// Your Chaturbate Username ( this is only useful if you embed a personal chatroom )
 	define ( 'AFFID',			'827SM' );									// Chaturbate Affiliate ID
 	define ( 'TRACK',			'HILLIPINO' );								// Chaturbate Campaign for Tracking
@@ -59,29 +59,29 @@ Due to some recent changes if you are using a whitelabel the iframes will error 
 	define ( 'CBWL',			'https://chaturbate.com' );					// If you are wanting to change the domain to match one of your hosted whitelabels,
 																			// enter the domain here. eg ( http://www.yourdomain.com ) the default is 'https://chaturbate.com'
 
-	```																				
+```																				
 
 
 ### General Settings
 
-	```php
+```php
 	define ( 'SITENAME',		'Chaturbate API Demo V2.3' );	// Your Site Name
 	define ( 'GOOGLE',			'' );							// Google Analytics Tracking ID Leave Blank to disable
-	```
+```
 
 
 ### Layout Settings
 
 These control how certain layout elements behave or rather or not to show them.
 
-	```php
+```php
 	define ( 'SLIDE_DIR',		'down' );		// Which direction thumbnail overlays slide in. (up,down,left,right)
 	define ( 'RELATED_SHOW',	true );			// Shows related cams on single cam page.
 	define ( 'RELATED_CNT', 	20 );			// The amount of related cams to show.
 	define ( 'THUMB_CNT',		30 );			// How many Thumbnails to show per page in the cam listings.
 	define ( 'BIRTHDAY_SHOW',	true );			// Show Birthday Cams
 	define ( 'PAGINATE',		true );			// Paginate Cams						
-	```
+```
 
 
 ### Thumbnail Position Ads
@@ -90,7 +90,7 @@ This is pretty experimental, you will have to tweak the css to get your ads to s
 
 Note the AD_CODE is a php variable, so be sure to escape correctly
 
-	```php
+```php
 	define ( 'AD_POS1',			NULL );			// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
 	define ( 'AD_POS2',			NULL );			// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
 	define ( 'AD_POS3',			NULL );			// ( Thumbnail Ad Position starting at 0 , NULL for no ad )
@@ -104,19 +104,19 @@ Note the AD_CODE is a php variable, so be sure to escape correctly
 	// Example Ad Code
 
 	define ( 'AD_CODE4',		'<a href="' . $variable . '" class="whatever"><img src="/path/to/img" alt="something" /></a>' );			// ( Ad Code for position 4 )
-	```
+```
 
 ### Random Titles and Descriptions
 
 You can add as many titles and descriptions as you like just change the $num variable to match the correct amount of descriptions and add a new case. eg... if you added 10 descriptions it would read:
 
-	```php
+```php
 		$num = Rand (1,10);
-	```
+```
 
-	Example Title
+Example Title
 
-	``` php
+``` php
 		/* 
 			Available variables are:
 
@@ -130,11 +130,11 @@ You can add as many titles and descriptions as you like just change the $num var
 			' . $model . '\'s Live Cam Show
 		';
 		break;		
-	```	
+```	
 
-	Example Description ( note descriptions can use the global defines in set above )
+Example Description ( note descriptions can use the global defines in set above )
 
-	``` php
+``` php
 		/* 
 			Available variables are:
 
@@ -152,7 +152,7 @@ You can add as many titles and descriptions as you like just change the $num var
 			</p>
 		';
 		break;
-	```
+```
 
 
 ### Links
