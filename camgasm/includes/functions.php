@@ -15,7 +15,7 @@
 		function get_xml() {
 
 			$filename 	= FLATFILE;
-			$url 		= 'http://' . CBWL . '/affiliates/api/onlinerooms/?format=xml&wm='. AFFID .'';
+			$url 		= CBWL . '/affiliates/api/onlinerooms/?format=xml&wm='. AFFID .'';
 			$data 		= file_get_contents( $url );
 
 			if( !empty( $data ) ) {

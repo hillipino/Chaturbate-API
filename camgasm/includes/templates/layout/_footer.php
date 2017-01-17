@@ -28,21 +28,21 @@
 							</ul>
 						</div>
 						<div class="column">	
-							<h3>Lorem Ipsum Dolor</h3>
+							<h3>Recommended Sites</h3>
 							<ul class="alt">
-								<li><a href="http://nsfwpix.com" class="external">NSFW Pix</a></li>
-								<li><a href="http://babes.hillipino.com" class="external">Stripping Babes</a></li>
-								<li><a href="http://sexicam.net" class="external">Sexicam</a></li>
-								<li><a href="#">Something Interesting</a></li>
+								<li><a href="http://istri.it/?p=28&s=24420&pp=1&v=30" class="external">Desktop Strippers</a></li>
+								<li><a href="http://adultfriendfinder.com/go/g10296-ppc?page_id=685" class="external">Get Laid Tonight</a></li>
+								<li><a href="http://secure.gigiriveraxxx.com/track/MTg3LjEuOC45LjAuMC4wLjAuMA" class="external">Gigi Rivera</a></li>
+								<li><a href="http://secure.pornstarplatinum.com/track/MTg3LjEuMTcuMTguMC4wLjAuMC4w" class="external">Pornstar Platinum</a></li>
 							</ul>
 						</div>
 						<div class="column">	
-							<h3>Aliquam Sed Dolor</h3>
+							<h3>My Favorites</h3>
 							<ul class="alt">
-								<li><a href="#">Something Interesting</a></li>
-								<li><a href="#">Something Interesting</a></li>
-								<li><a href="#">Something Interesting</a></li>
-								<li><a href="#">Something Interesting</a></li>
+								<li><a href="http://secure.angelinavalentine.com/track/MTg3LjEuMTEuMTIuMC4wLjAuMC4w" class="external">Angelina Valentine</a></li>
+								<li><a href="http://secure.ariellaferrera.com/track/MTg3LjEuNTYuMjA0LjAuMC4wLjAuMA" class="external">Ariella Ferrera</a></li>
+								<li><a href="http://secure.clubveronicaavluv.com/track/MTg3LjEuMTMuMTQuMC4wLjAuMC4w" class="external">Veronica Avluv</a></li>
+								<li><a href="http://secure.emilysplayground.com/track/MTg3LjEuMTguMjEuMC4wLjAuMC4w" class="external">Emilys Playground</a></li>
 							</ul>
 						</div>												
 					</div>

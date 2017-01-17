@@ -26,6 +26,7 @@
 			$arg1 		= array_key_exists('arg1', $_GET) ? $_GET['arg1'] : null;				
 			$cams 		= new SimpleXMLElement(FLATFILE, null, true);
 			$online 	= false;
+			$index 		= 0;
 				
 			foreach( $cams as $cam ){ 
 				
@@ -57,6 +58,8 @@
 				if ( $cam->username == $user ) {
 
 					$online = true;
+					$prev 	= $cams->resource[ $index - 1 ];
+        			$next 	= $cams->resource[ $index + 1 ];
 					
 					echo '		
 						<div class="inner solo">
@@ -65,13 +68,13 @@
 										
 								if ( MODE == 'revshare' ) {
 
-									$chatroom 	= str_replace( 'camgasm.com', CBWL, $cam->chat_room_url_revshare );
-									$iframe 	= str_replace( 'camgasm.com', CBWL, $cam->iframe_embed_revshare );
+									$chatroom 	= str_replace( 'https://camgasm.com', CBWL, $cam->chat_room_url_revshare );
+									$iframe 	= str_replace( 'https://camgasm.com', CBWL, $cam->iframe_embed_revshare );
 									echo $iframe;
 
 								} else {
-									$chatroom 	= str_replace( 'camgasm.com', CBWL, $cam->chat_room_url );
-									$iframe 	= str_replace( 'camgasm.com', CBWL, $cam->iframe_embed );
+									$chatroom 	= str_replace( 'https://camgasm.com', CBWL, $cam->chat_room_url );
+									$iframe 	= str_replace( 'https://camgasm.com', CBWL, $cam->iframe_embed );
 									echo $iframe;
 													
 								}
@@ -109,6 +112,10 @@
 
 									<a href="' . LINK_SIGNUP . '" class="button special external">Register to tip ' . $arg1 . '</a>
 								</div>
+							</div>
+							<div class="flex">
+								<a href="' . BASEHREF . 'cam/' . $prev->username . '" class="button prev">Previous Cam</a>
+								<a href="' . BASEHREF . 'cam/' . $next->username . '" class="button next">Next Cam</a>
 							</div>
 						</div>
 							
@@ -194,8 +201,8 @@
 			}			
 			
 			if ( $room == 'personal' )
-				echo '<iframe src="https://camgasm.com/affiliates/in/?tour=' . $go . '&amp;campaign=' . AFFID . '&amp;?track=' . TRACK . '&amp;room=' . USER . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
+				echo '<iframe src="' . CBWL . '/affiliates/in/?tour=' . $go . '&amp;campaign=' . AFFID . '&amp;?track=' . TRACK . '&amp;room=' . USER . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
 			else
-				echo '<iframe src="https://camgasm.com/affiliates/in/?tour=' . $go . '&amp;campaign=' . AFFID . '&amp;?track=' . TRACK . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
+				echo '<iframe src="' . CBWL . '/affiliates/in/?tour=' . $go . '&amp;campaign=' . AFFID . '&amp;?track=' . TRACK . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
 			
 		}			

@@ -18,8 +18,8 @@
 		define ( 'TRACK',			'HILLIPINO' );								// Chaturbate Campaign for Tracking
 		define ( 'MODE',			'revshare' );								// ( revshare, or tokens )
 		define ( 'ROOM',			'top' );									// Which featured chatroom to embed ( top, male, transexual, personal, NULL )
-		define ( 'CBWL',			'camgasm.com' );							// If you are wanting to change the domain to match one of your hosted whitelabels,
-																				// enter the domain here. eg ( www.yourdomain.com ) the default is 'chaturbate.com'
+		define ( 'CBWL',			'https://camgasm.com' );					// If you are wanting to change the domain to match one of your hosted whitelabels,
+																				// enter the domain here. eg ( http://www.yourdomain.com ) the default is 'https://camgasm.com'
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// General Settings
@@ -244,19 +244,19 @@
 
 				case 'revshare':
 
-					define ( 'LINK_SIGNUP',		'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_BEST_TOUR . '&campaign=' . AFFID );		// Signup Link
-					define ( 'LINK_YOURCAM',	'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_YOURCAM . '&campaign=' . AFFID . '&room=' . USER );		// Your Personal Cam Link
-					define ( 'LINK_AFF',		'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_AFF_PROG . '&campaign=' . AFFID );		// Your Affiliate URL
-					define ( 'LINK_BROADCAST',	'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_BROADCASTER . '&campaign=' . AFFID );	// Broadcast your cam
+					define ( 'LINK_SIGNUP',		CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_BEST_TOUR . '&campaign=' . AFFID );// Signup Link
+					define ( 'LINK_YOURCAM',	CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_YOURCAM . '&campaign=' . AFFID . '&room=' . USER );// Your Personal Cam Link
+					define ( 'LINK_AFF',		CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_AFF_PROG . '&campaign=' . AFFID );	// Your Affiliate URL
+					define ( 'LINK_BROADCAST',	CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_BROADCASTER . '&campaign=' . AFFID );// Broadcast your cam
 
 					break;
 
 				case 'tokens':
 
-					define ( 'LINK_SIGNUP',		'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_BEST_TOUR. '&campaign=' . AFFID );		// Signup Link
-					define ( 'LINK_YOURCAM',	'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_YOURCAM . '&campaign=' . AFFID . '&room=' . USER );	// Your Personal Cam Link
-					define ( 'LINK_AFF',		'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_AFF_PROG . '&campaign=' . AFFID );		// Your Affiliate URL
-					define ( 'LINK_BROADCAST',	'http://' . CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_BROADCASTER . '&campaign=' . AFFID );	// Broadcast your cam
+					define ( 'LINK_SIGNUP',		CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_BEST_TOUR. '&campaign=' . AFFID );		// Signup Link
+					define ( 'LINK_YOURCAM',	CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_YOURCAM . '&campaign=' . AFFID . '&room=' . USER );	// Your Personal Cam Link
+					define ( 'LINK_AFF',		CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . REV_AFF_PROG . '&campaign=' . AFFID );		// Your Affiliate URL
+					define ( 'LINK_BROADCAST',	CBWL . '/affiliates/in/?track=' . TRACK . '&tour=' . TOK_BROADCASTER . '&campaign=' . AFFID );	// Broadcast your cam
 
 					break;
 
