@@ -58,9 +58,9 @@
 				if ( $cam->username == $user ) {
 
 					$online = true;
-					$prev 	= $cams->resource[$index-1];
-        				$next 	= $cams->resource[$index+1];
-					
+					$prev 	= $cams->resource[ $index - 1 ];
+        			$next 	= $cams->resource[ $index + 1 ];
+
 					echo '		
 						<div class="inner solo">
 
@@ -118,10 +118,11 @@
 							</div>
 						</div>
 							
-					';					
+					';		
 						
 				}
-				$index++;
+
+				$index++;			
 	
 			}
 
@@ -225,8 +226,8 @@
 			}			
 			
 			if ( $room == 'personal' )
-				echo '<iframe src="http://chaturbate.com/affiliates/in/' . $go . '/' . AFFID . '/?track=' . TRACK . '&amp;room=' . USER . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
+				echo '<iframe src="' . CBWL . '/affiliates/in/' . $go . '/' . AFFID . '/?track=' . TRACK . '&amp;room=' . USER . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
 			else
-				echo '<iframe src="http://chaturbate.com/affiliates/in/' . $go . '/' . AFFID . '/?track=' . TRACK . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
+				echo '<iframe src="' . CBWL . '/affiliates/in/' . $go . '/' . AFFID . '/?track=' . TRACK . '&amp;bgcolor=transparent" height="528" width="850" ></iframe>';
 			
 		}			
