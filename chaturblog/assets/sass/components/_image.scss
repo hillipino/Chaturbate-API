@@ -1,0 +1,107 @@
+
+.video-wrapper {
+	position: relative;
+	height: 550px;
+	padding-top: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%!important;
+		height: 100%!important;
+		max-width: 100%;
+	}
+
+	@include breakpoint(xlarge) {
+		//padding-bottom: 75%;
+	}
+
+	@include breakpoint(large) {
+		//padding-bottom: 70%;
+	}
+
+	@include breakpoint(medium) {
+		//padding-bottom: 82%;
+	}
+
+	@include breakpoint(small) {
+		display: block;
+		padding-bottom: 0; 
+		iframe {
+			top: initial;
+			left: initial;
+			position: relative;
+			height: 528px!important;
+			max-width: 100%!important;
+		}
+	}	
+
+}
+
+/* Image */
+
+	.image {
+		border: 0;
+		display: inline-block;
+		position: relative;
+
+		img {
+			display: block;
+		}
+
+		&.left,
+		&.right {
+			max-width: 40%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		&.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		&.fit {
+			display: block;
+			margin: 0 0 _size(element-margin) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.featured {
+			display: block;
+			margin: 0 0 _size(section-spacing) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			@include breakpoint(small) {
+				margin: 0 0 _size(section-spacing-small) 0;
+			}
+		}
+
+		&.main {
+			display: block;
+			margin: 0 0 (_size(element-margin) * 1.5) 0;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
