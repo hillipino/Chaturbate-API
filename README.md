@@ -2,6 +2,8 @@
 
 Chaturbate API is a simple, barebones php script that will fetch [Chaturbate's affiliate XML feed](http://affiliates.hillipino.com/jPqoq) or [Camgasm's XML feed](http://camgasm.com/affiliates/in/?track=default&tour=07kX&campaign=7iFy8) and display the cams on your website. The template is fully customizable and responsive.
 
+Each version is slightly different but the below steps are pretty much the same. Each individual version has its own settings file which is commented throughout.
+
 
 ## Setup and Configuration
 
